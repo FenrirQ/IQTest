@@ -16,14 +16,16 @@ class ResultVC: UIViewController {
     @IBOutlet var bestlbl: UILabel!
     @IBOutlet var minelbl: UILabel!
     let singleton = Singleton.share
+    let high = NSUserDefaults.standardUserDefaults().stringForKey("high")
+    
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         congratulationlbl.text = "Chúc mừng " + self.singleton.ten + ", bạn đã hoàn thành xong bài test !"
-        iqlbl.text = String(Int((self.singleton.diem / (2016 - self.singleton.namsinh)) * 100))
-        let iq = Int((self.singleton.diem / (2016 - self.singleton.namsinh)) * 100)
+        iqlbl.text = String(Int((Double(self.singleton.diem) / Double(2016 - self.singleton.namsinh)) * 100))
+        let iq = Int((Double(self.singleton.diem) / Double(2016 - self.singleton.namsinh)) * 100)
         if iq <= 100 {
             commentlbl.text = "Bạn khá là ngốc !"
         } else if iq > 100 && iq <= 130 {
@@ -34,10 +36,16 @@ class ResultVC: UIViewController {
             commentlbl.text = "Chúc mừng ! Bạn là thiên tài !"
         }
         
-        if iq > Int(bestlbl.text!)! {
-            bestlbl.text = String(iq)
-            minelbl.text = "của " + self.singleton.ten + " ( " + self.singleton.username + " )"
+        if iq >= Int(high!) {
+            NSUserDefaults.standardUserDefaults().setObject(iq, forKey: "high")
+            NSUserDefaults.standardUserDefaults().setObject(self.singleton.ten, forKey: "ten")
+            NSUserDefaults.standardUserDefaults().setObject(self.singleton.username, forKey: "user")
+            NSUserDefaults.standardUserDefaults().synchronize()
         }
+        
+        bestlbl.text = NSUserDefaults.standardUserDefaults().stringForKey("high")
+        minelbl.text = "của " + NSUserDefaults.standardUserDefaults().stringForKey("ten")! + " ( " + NSUserDefaults.standardUserDefaults().stringForKey("user")! + " ) "
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -92,4 +100,6 @@ class ResultVC: UIViewController {
     func quit() {
         exit(0)
     }
+    
+    
 }

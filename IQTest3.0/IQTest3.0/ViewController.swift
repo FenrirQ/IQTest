@@ -19,6 +19,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -42,6 +43,7 @@ class ViewController: UIViewController {
             
             do {
                 let results = try context.executeFetchRequest(request)
+                print(results.count)
                 if results.count > 0 {
                     
 //                    let res = results[0] as! NSManagedObject

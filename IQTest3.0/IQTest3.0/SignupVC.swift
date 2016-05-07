@@ -43,13 +43,13 @@ class SignupVC: UIViewController {
         //let newUser = NSEntityDescription.insertNewObjectForEntityForName("Users", inManagedObjectContext: context) as NSManagedObject
         let newUser = NSManagedObject(entity: entity!, insertIntoManagedObjectContext: context)
         
-        let username = usernameTF.text
+        let usernames = usernameTF.text
         let pass = passwordTF.text
         let repPass = repPasswordTF.text
         let name = nameTF.text
         let birth = birthTF.text
         
-        if username != "" && pass != "" && repPass != "" && name != "" && birth != "" {
+        if usernames != "" && pass != "" && repPass != "" && name != "" && birth != "" {
             if pass == repPass {
                 
                 
@@ -65,8 +65,7 @@ class SignupVC: UIViewController {
                         for i in 0...(results.count - 1){
                             
                             let res = results[i] as! NSManagedObject
-                            let user = res.valueForKey("username") as! String
-                            if username == user {
+                            if usernames == res.valueForKey("username") as? String {
                                 
                                 let myAlert = UIAlertController(title: "Thông báo", message: "Tài khoản đã tồn tại !", preferredStyle: .Alert)
                                 let actionOK = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
@@ -90,7 +89,7 @@ class SignupVC: UIViewController {
                 do {
                     
                     try context.save()
-                    users.append(newUser)
+                    //users.append(newUser)
         
                     
                 } catch {
@@ -119,35 +118,35 @@ class SignupVC: UIViewController {
                 self.presentViewController(myAlert, animated : true, completion : nil)
                 
             }
-        } else if username!.isEmpty && pass != "" && repPass != "" && name != "" && birth != "" {
+        } else if usernames!.isEmpty && pass != "" && repPass != "" && name != "" && birth != "" {
             
             let myAlert = UIAlertController(title: "Thông báo", message: "Bạn chưa nhập tên tài khoản !", preferredStyle: .Alert)
             let actionOK = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
             myAlert.addAction(actionOK)
             self.presentViewController(myAlert, animated : true, completion : nil)
             
-        } else if username != "" && pass!.isEmpty && repPass != "" && name != "" && birth != "" {
+        } else if usernames != "" && pass!.isEmpty && repPass != "" && name != "" && birth != "" {
             
             let myAlert = UIAlertController(title: "Thông báo", message: "Bạn chưa nhập mật khẩu !", preferredStyle: .Alert)
             let actionOK = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
             myAlert.addAction(actionOK)
             self.presentViewController(myAlert, animated : true, completion : nil)
             
-        } else if username != "" && pass != "" && repPass!.isEmpty && name != "" && birth != "" {
+        } else if usernames != "" && pass != "" && repPass!.isEmpty && name != "" && birth != "" {
             
             let myAlert = UIAlertController(title: "Thông báo", message: "Bạn chưa nhập lại mật khẩu !", preferredStyle: .Alert)
             let actionOK = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
             myAlert.addAction(actionOK)
             self.presentViewController(myAlert, animated : true, completion : nil)
             
-        } else if username != "" && pass != "" && repPass != "" && name!.isEmpty && birth != "" {
+        } else if usernames != "" && pass != "" && repPass != "" && name!.isEmpty && birth != "" {
             
             let myAlert = UIAlertController(title: "Thông báo", message: "Bạn chưa nhập họ tên !", preferredStyle: .Alert)
             let actionOK = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
             myAlert.addAction(actionOK)
             self.presentViewController(myAlert, animated : true, completion : nil)
             
-        } else if username != "" && pass != "" && repPass != "" && name != "" && birth!.isEmpty {
+        } else if usernames != "" && pass != "" && repPass != "" && name != "" && birth!.isEmpty {
             
             let myAlert = UIAlertController(title: "Thông báo", message: "Bạn chưa nhập năm sinh !", preferredStyle: .Alert)
             let actionOK = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
