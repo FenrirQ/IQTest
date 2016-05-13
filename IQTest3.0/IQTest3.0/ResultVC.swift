@@ -17,6 +17,7 @@ class ResultVC: UIViewController {
     @IBOutlet var minelbl: UILabel!
     let singleton = Singleton.share
     let high = NSUserDefaults.standardUserDefaults().stringForKey("high")
+    var share : Int = 0
     
     
     
@@ -26,6 +27,7 @@ class ResultVC: UIViewController {
         congratulationlbl.text = "Chúc mừng " + self.singleton.ten + ", bạn đã hoàn thành xong bài test !"
         iqlbl.text = String(Int((Double(self.singleton.diem) / Double(2016 - self.singleton.namsinh)) * 100))
         let iq = Int((Double(self.singleton.diem) / Double(2016 - self.singleton.namsinh)) * 100)
+        share = iq
         if iq <= 100 {
             commentlbl.text = "Bạn khá là ngốc !"
         } else if iq > 100 && iq <= 130 {
@@ -99,6 +101,15 @@ class ResultVC: UIViewController {
 
     func quit() {
         exit(0)
+    }
+    
+    
+    @IBAction func shareAction(sender: AnyObject) {
+        
+        let iqShare = String(share) + " là chỉ số IQ của tôi qua phần mềm Test IQ của Đại đội 9"
+        let activityVC : UIActivityViewController = UIActivityViewController(activityItems: [iqShare], applicationActivities: nil)
+        self.presentViewController(activityVC, animated: true, completion: nil)
+        
     }
     
     

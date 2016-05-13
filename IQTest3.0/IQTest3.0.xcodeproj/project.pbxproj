@@ -71,6 +71,10 @@
 		743684AC1CC9FB760011E664 /* image99.png in Resources */ = {isa = PBXBuildFile; fileRef = 743684771CC9FB760011E664 /* image99.png */; };
 		743684AD1CC9FB760011E664 /* image100.png in Resources */ = {isa = PBXBuildFile; fileRef = 743684781CC9FB760011E664 /* image100.png */; };
 		743684AF1CCA5B140011E664 /* ResultVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743684AE1CCA5B140011E664 /* ResultVC.swift */; };
+		744416381CE4B0E000EE9BBC /* Screen Shot 2016-05-12 at 7.37.36 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = 744416371CE4B0E000EE9BBC /* Screen Shot 2016-05-12 at 7.37.36 PM.png */; };
+		7444163A1CE4B10F00EE9BBC /* GuideVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744416391CE4B10F00EE9BBC /* GuideVC.swift */; };
+		7444163C1CE5DC8800EE9BBC /* 384739-test-your-security-iq.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7444163B1CE5DC8800EE9BBC /* 384739-test-your-security-iq.jpg */; };
+		7444163E1CE5DC9300EE9BBC /* cover_s0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7444163D1CE5DC9300EE9BBC /* cover_s0.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -140,6 +144,10 @@
 		743684771CC9FB760011E664 /* image99.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image99.png; sourceTree = "<group>"; };
 		743684781CC9FB760011E664 /* image100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image100.png; sourceTree = "<group>"; };
 		743684AE1CCA5B140011E664 /* ResultVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultVC.swift; sourceTree = "<group>"; };
+		744416371CE4B0E000EE9BBC /* Screen Shot 2016-05-12 at 7.37.36 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2016-05-12 at 7.37.36 PM.png"; sourceTree = "<group>"; };
+		744416391CE4B10F00EE9BBC /* GuideVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuideVC.swift; sourceTree = "<group>"; };
+		7444163B1CE5DC8800EE9BBC /* 384739-test-your-security-iq.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "384739-test-your-security-iq.jpg"; sourceTree = "<group>"; };
+		7444163D1CE5DC9300EE9BBC /* cover_s0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cover_s0.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +180,9 @@
 		743684221CC485C50011E664 /* IQTest3.0 */ = {
 			isa = PBXGroup;
 			children = (
+				7444163D1CE5DC9300EE9BBC /* cover_s0.jpg */,
+				7444163B1CE5DC8800EE9BBC /* 384739-test-your-security-iq.jpg */,
+				744416371CE4B0E000EE9BBC /* Screen Shot 2016-05-12 at 7.37.36 PM.png */,
 				743684441CC9FB760011E664 /* image1.png */,
 				743684451CC9FB760011E664 /* image3.png */,
 				743684461CC9FB760011E664 /* image4.png */,
@@ -237,6 +248,7 @@
 				7436843A1CC7E9FA0011E664 /* Singleton.swift */,
 				7436843E1CC7EE980011E664 /* ReadyVC.swift */,
 				743684401CC930E60011E664 /* TestVC.swift */,
+				744416391CE4B10F00EE9BBC /* GuideVC.swift */,
 			);
 			path = IQTest3.0;
 			sourceTree = "<group>";
@@ -314,6 +326,7 @@
 				743684311CC485C50011E664 /* LaunchScreen.storyboard in Resources */,
 				743684811CC9FB760011E664 /* image10.png in Resources */,
 				743684A31CC9FB760011E664 /* image71.png in Resources */,
+				744416381CE4B0E000EE9BBC /* Screen Shot 2016-05-12 at 7.37.36 PM.png in Resources */,
 				7436848E1CC9FB760011E664 /* image39.png in Resources */,
 				743684991CC9FB760011E664 /* image55.png in Resources */,
 				743684A61CC9FB760011E664 /* image74.png in Resources */,
@@ -348,6 +361,8 @@
 				743684831CC9FB760011E664 /* image12.png in Resources */,
 				7436848A1CC9FB760011E664 /* image33.png in Resources */,
 				743684291CC485C50011E664 /* Main.storyboard in Resources */,
+				7444163C1CE5DC8800EE9BBC /* 384739-test-your-security-iq.jpg in Resources */,
+				7444163E1CE5DC9300EE9BBC /* cover_s0.jpg in Resources */,
 				743684AC1CC9FB760011E664 /* image99.png in Resources */,
 				7436848D1CC9FB760011E664 /* image38.png in Resources */,
 				743684A21CC9FB760011E664 /* image70.png in Resources */,
@@ -368,6 +383,7 @@
 				743684391CC48BD60011E664 /* SignupVC.swift in Sources */,
 				743684AF1CCA5B140011E664 /* ResultVC.swift in Sources */,
 				743684261CC485C50011E664 /* ViewController.swift in Sources */,
+				7444163A1CE4B10F00EE9BBC /* GuideVC.swift in Sources */,
 				7436842C1CC485C50011E664 /* IQTest3_0.xcdatamodeld in Sources */,
 				7436843B1CC7E9FA0011E664 /* Singleton.swift in Sources */,
 				7436843F1CC7EE980011E664 /* ReadyVC.swift in Sources */,

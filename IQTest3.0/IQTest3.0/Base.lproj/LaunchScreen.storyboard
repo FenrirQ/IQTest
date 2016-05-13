@@ -18,10 +18,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="IQ GAME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UUw-a5-RVd">
-                                <rect key="frame" x="20" y="179" width="335" height="266"/>
+                                <rect key="frame" x="20" y="28" width="335" height="93"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="64"/>
-                                <color key="textColor" red="0.91587716341018677" green="0.56296545267105103" blue="0.88089519739151001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cover_s0.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Mv2-kU-Qbv">
+                                <rect key="frame" x="20" y="178" width="335" height="250"/>
+                                <animations/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="9" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dIb-nT-x01">
+                                <rect key="frame" x="96" y="479" width="183" height="137"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="110"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -35,4 +46,7 @@
             <point key="canvasLocation" x="52.5" y="374.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="cover_s0.jpg" width="428" height="321"/>
+    </resources>
 </document>
