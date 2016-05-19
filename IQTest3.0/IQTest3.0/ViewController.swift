@@ -52,11 +52,11 @@ class ViewController: UIViewController {
                     var j :Int = 0
                     for i in 0...(results.count - 1){
                         let res = results[i] as! NSManagedObject
-                        let user = res.valueForKey("username") as! String
-                        let password = res.valueForKey("password") as! String
+                        let user = res.valueForKey("username") as? String
+                        let password = res.valueForKey("password") as? String
                         if user == username && password == pass {
                             
-                            self.singleton.username = user
+                            self.singleton.username = user!
                             self.singleton.ten = res.valueForKey("name") as! String
                             self.singleton.namsinh = res.valueForKey("birth") as! Int
                             print(self.singleton.username)

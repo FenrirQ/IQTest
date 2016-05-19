@@ -50,7 +50,7 @@ class SignupVC: UIViewController {
         let birth = birthTF.text
         
         if usernames != "" && pass != "" && repPass != "" && name != "" && birth != "" {
-            if pass == repPass {
+            if pass == repPass && Int(birth!) != nil && Int(birth!) <= 2016 {
                 
                 
                 let appDel = (UIApplication.sharedApplication().delegate as! AppDelegate)
@@ -103,7 +103,7 @@ class SignupVC: UIViewController {
                 myAlert.addAction(actionOK)
                 self.presentViewController(myAlert, animated : true, completion : nil)
                 
-            } else if Int(birth!)! > 2016 || Int(birth!) == nil {
+            } else if Int(birth!) > 2016 || Int(birth!) == nil {
                 
                 let myAlert = UIAlertController(title: "Thông báo", message: "Năm sinh không đúng !", preferredStyle: .Alert)
                 let actionOK = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)

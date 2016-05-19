@@ -161,28 +161,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		743684171CC485C50011E664 = {
+		740425221CEC183A00CEB9A1 /* photos */ = {
 			isa = PBXGroup;
 			children = (
-				743684221CC485C50011E664 /* IQTest3.0 */,
-				743684211CC485C50011E664 /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		743684211CC485C50011E664 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				743684201CC485C50011E664 /* IQTest3.0.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		743684221CC485C50011E664 /* IQTest3.0 */ = {
-			isa = PBXGroup;
-			children = (
-				7444163D1CE5DC9300EE9BBC /* cover_s0.jpg */,
 				7444163B1CE5DC8800EE9BBC /* 384739-test-your-security-iq.jpg */,
-				744416371CE4B0E000EE9BBC /* Screen Shot 2016-05-12 at 7.37.36 PM.png */,
 				743684441CC9FB760011E664 /* image1.png */,
 				743684451CC9FB760011E664 /* image3.png */,
 				743684461CC9FB760011E664 /* image4.png */,
@@ -208,6 +190,7 @@
 				7436845A1CC9FB760011E664 /* image40.png */,
 				7436845B1CC9FB760011E664 /* image41.png */,
 				7436845C1CC9FB760011E664 /* image43.png */,
+				7444163D1CE5DC9300EE9BBC /* cover_s0.jpg */,
 				7436845D1CC9FB760011E664 /* image44.png */,
 				7436845E1CC9FB760011E664 /* image45.png */,
 				7436845F1CC9FB760011E664 /* image46.png */,
@@ -234,8 +217,33 @@
 				743684741CC9FB760011E664 /* image94.png */,
 				743684751CC9FB760011E664 /* image95.png */,
 				743684761CC9FB760011E664 /* image98.png */,
-				743684771CC9FB760011E664 /* image99.png */,
 				743684781CC9FB760011E664 /* image100.png */,
+				743684771CC9FB760011E664 /* image99.png */,
+				744416371CE4B0E000EE9BBC /* Screen Shot 2016-05-12 at 7.37.36 PM.png */,
+			);
+			name = photos;
+			sourceTree = "<group>";
+		};
+		743684171CC485C50011E664 = {
+			isa = PBXGroup;
+			children = (
+				743684221CC485C50011E664 /* IQTest3.0 */,
+				743684211CC485C50011E664 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		743684211CC485C50011E664 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				743684201CC485C50011E664 /* IQTest3.0.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		743684221CC485C50011E664 /* IQTest3.0 */ = {
+			isa = PBXGroup;
+			children = (
+				740425221CEC183A00CEB9A1 /* photos */,
 				743684231CC485C50011E664 /* AppDelegate.swift */,
 				743684251CC485C50011E664 /* ViewController.swift */,
 				743684271CC485C50011E664 /* Main.storyboard */,
