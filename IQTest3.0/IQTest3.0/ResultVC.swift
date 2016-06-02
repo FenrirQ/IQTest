@@ -112,5 +112,15 @@ class ResultVC: UIViewController {
         
     }
     
+    @IBAction func screenShot(sender: UIButton) {
+        
+        UIGraphicsBeginImageContext(view.frame.size)
+        view.layer.renderInContext(UIGraphicsGetCurrentContext()!)
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
+        
+    }
+    
     
 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
@@ -309,7 +309,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8PQ-Xc-0nL">
-                                <rect key="frame" x="52" y="536" width="79" height="40"/>
+                                <rect key="frame" x="148" y="528" width="79" height="40"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.023346500471234322" green="0.40428054332733154" blue="0.98784738779067993" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Chơi lại">
@@ -320,7 +320,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vfN-tY-Qbr">
-                                <rect key="frame" x="241" y="534" width="82" height="39.5"/>
+                                <rect key="frame" x="269" y="528" width="82" height="39.5"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.38046032190322876" green="0.72430354356765747" blue="0.08359893411397934" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Đăng xuất">
@@ -397,6 +397,17 @@
                                 <state key="normal" title="Share"/>
                                 <connections>
                                     <action selector="shareAction:" destination="MQ4-c8-RC3" eventType="touchUpInside" id="eLf-zi-7p7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Duw-V2-ghY">
+                                <rect key="frame" x="24" y="528" width="82" height="39.5"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Chụp ảnh">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="screenShot:" destination="MQ4-c8-RC3" eventType="touchUpInside" id="aIg-TG-OK1"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -586,6 +597,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="5U8-mJ-ghj"/>
+        <segue reference="nJE-WR-8io"/>
     </inferredMetricsTieBreakers>
 </document>
